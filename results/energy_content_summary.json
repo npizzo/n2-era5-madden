@@ -1,0 +1,237 @@
+{
+  "status": "DESCRIPTIVE_COMPARISON",
+  "job_id": "2087309",
+  "degrees": [
+    1,
+    59
+  ],
+  "minimum_nominal_wavelength_km": 678.4775185091719,
+  "slopes": [
+    {
+      "level": 300,
+      "season": "ALL",
+      "range": [
+        10,
+        20
+      ],
+      "slope": -2.5885921449113907,
+      "year_bootstrap_95": [
+        -2.6015264251385224,
+        -2.5752192558502656
+      ]
+    },
+    {
+      "level": 300,
+      "season": "ALL",
+      "range": [
+        13,
+        40
+      ],
+      "slope": -2.8515261559410945,
+      "year_bootstrap_95": [
+        -2.8601936276012028,
+        -2.8438084162709534
+      ]
+    },
+    {
+      "level": 300,
+      "season": "DJF",
+      "range": [
+        10,
+        20
+      ],
+      "slope": -2.6046053141885492,
+      "year_bootstrap_95": [
+        -2.6257731579785553,
+        -2.5815768428938934
+      ]
+    },
+    {
+      "level": 300,
+      "season": "DJF",
+      "range": [
+        13,
+        40
+      ],
+      "slope": -2.8625039909591097,
+      "year_bootstrap_95": [
+        -2.874892576996919,
+        -2.8510449658370285
+      ]
+    },
+    {
+      "level": 300,
+      "season": "JJA",
+      "range": [
+        10,
+        20
+      ],
+      "slope": -2.5325751506477703,
+      "year_bootstrap_95": [
+        -2.552642254427814,
+        -2.5140699247920844
+      ]
+    },
+    {
+      "level": 300,
+      "season": "JJA",
+      "range": [
+        13,
+        40
+      ],
+      "slope": -2.799701492894491,
+      "year_bootstrap_95": [
+        -2.8086339443900576,
+        -2.7918790407783844
+      ]
+    },
+    {
+      "level": 500,
+      "season": "ALL",
+      "range": [
+        10,
+        20
+      ],
+      "slope": -2.5896144767254152,
+      "year_bootstrap_95": [
+        -2.6028059949491067,
+        -2.5758978499709504
+      ]
+    },
+    {
+      "level": 500,
+      "season": "ALL",
+      "range": [
+        13,
+        40
+      ],
+      "slope": -2.728773190384465,
+      "year_bootstrap_95": [
+        -2.736001012678283,
+        -2.722167827809539
+      ]
+    },
+    {
+      "level": 500,
+      "season": "DJF",
+      "range": [
+        10,
+        20
+      ],
+      "slope": -2.6091215221520714,
+      "year_bootstrap_95": [
+        -2.6314330836148017,
+        -2.5847029229437246
+      ]
+    },
+    {
+      "level": 500,
+      "season": "DJF",
+      "range": [
+        13,
+        40
+      ],
+      "slope": -2.6875381411055748,
+      "year_bootstrap_95": [
+        -2.6970260694134836,
+        -2.67848347262787
+      ]
+    },
+    {
+      "level": 500,
+      "season": "JJA",
+      "range": [
+        10,
+        20
+      ],
+      "slope": -2.5711474670776826,
+      "year_bootstrap_95": [
+        -2.5947085566996595,
+        -2.5496520220159105
+      ]
+    },
+    {
+      "level": 500,
+      "season": "JJA",
+      "range": [
+        13,
+        40
+      ],
+      "slope": -2.736202942973148,
+      "year_bootstrap_95": [
+        -2.746934716042488,
+        -2.726456478697097
+      ]
+    }
+  ],
+  "n2": [
+    {
+      "level": 300,
+      "season": "ALL",
+      "E1": 2.4709664577565826,
+      "E2": 9.31650101756194,
+      "E3": 42.83951664222436,
+      "n2_below_neighbors": false,
+      "n2_stationary_fraction": 0.15188375018420047,
+      "n2_divergent_fraction": 0.022337643984535447
+    },
+    {
+      "level": 300,
+      "season": "DJF",
+      "E1": 3.3341574106846625,
+      "E2": 5.415812644444236,
+      "E3": 44.45634927565208,
+      "n2_below_neighbors": false,
+      "n2_stationary_fraction": 0.768131818072838,
+      "n2_divergent_fraction": 0.03978844780821904
+    },
+    {
+      "level": 300,
+      "season": "JJA",
+      "E1": 2.628089646755663,
+      "E2": 20.436641860958975,
+      "E3": 40.30362412928735,
+      "n2_below_neighbors": false,
+      "n2_stationary_fraction": 0.940689223872375,
+      "n2_divergent_fraction": 0.010262610060317694
+    },
+    {
+      "level": 500,
+      "season": "ALL",
+      "E1": 1.85602345732231,
+      "E2": 3.593334700513468,
+      "E3": 24.902737449215053,
+      "n2_below_neighbors": false,
+      "n2_stationary_fraction": 0.2862180273899244,
+      "n2_divergent_fraction": 0.02902457683979085
+    },
+    {
+      "level": 500,
+      "season": "DJF",
+      "E1": 0.8759377742302357,
+      "E2": 1.3567670199223696,
+      "E3": 27.42354165463957,
+      "n2_below_neighbors": false,
+      "n2_stationary_fraction": 0.5358994802466569,
+      "n2_divergent_fraction": 0.07410559896399727
+    },
+    {
+      "level": 500,
+      "season": "JJA",
+      "E1": 2.8095748157856852,
+      "E2": 8.022092245705153,
+      "E3": 20.46922660135982,
+      "n2_below_neighbors": false,
+      "n2_stationary_fraction": 0.9277279719212297,
+      "n2_divergent_fraction": 0.015125572601400796
+    }
+  ],
+  "historical_layer_slopes_10_20": {
+    "vector_total": -2.8361286134632406,
+    "rotational": -2.87967584628572,
+    "divergent": -2.004289820339948,
+    "scalar_uv_total": -2.7287470837861694
+  },
+  "historical_amplitude_comparison": "Not performed: no digitized historical ordinates. Shape guides are normalized to ERA5.",
+  "layer_averaging": "Pressure-weighted mean of spectral energies, endpoints linearly interpolated at 92 and 353 hPa; not an exact reconstruction of original model-level quadrature."
+}

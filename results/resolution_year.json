@@ -1,0 +1,118 @@
+{
+  "year": 1979,
+  "rows": [
+    {
+      "level": 300,
+      "m": 0,
+      "n": 1,
+      "coefficient_relative_rms": 0.006019038953980605,
+      "westward_psd_relative_l2": 0.0022570351062932716
+    },
+    {
+      "level": 300,
+      "m": 0,
+      "n": 2,
+      "coefficient_relative_rms": 0.002165435012350658,
+      "westward_psd_relative_l2": 0.0029688836454164983
+    },
+    {
+      "level": 300,
+      "m": 1,
+      "n": 2,
+      "coefficient_relative_rms": 0.007150020906357882,
+      "westward_psd_relative_l2": 0.0036782923094802827
+    },
+    {
+      "level": 300,
+      "m": 2,
+      "n": 2,
+      "coefficient_relative_rms": 0.009421667017068031,
+      "westward_psd_relative_l2": 0.00318933191456782
+    },
+    {
+      "level": 300,
+      "m": 1,
+      "n": 3,
+      "coefficient_relative_rms": 0.004393833535413473,
+      "westward_psd_relative_l2": 0.0012644436892368836
+    },
+    {
+      "level": 300,
+      "m": 1,
+      "n": 4,
+      "coefficient_relative_rms": 0.002168174346115052,
+      "westward_psd_relative_l2": 0.0008744760192232635
+    },
+    {
+      "level": 300,
+      "m": 2,
+      "n": 3,
+      "coefficient_relative_rms": 0.005625758234480157,
+      "westward_psd_relative_l2": 0.002315879040897104
+    },
+    {
+      "level": 300,
+      "m": 3,
+      "n": 3,
+      "coefficient_relative_rms": 0.005323041303538185,
+      "westward_psd_relative_l2": 0.001894167306847577
+    },
+    {
+      "level": 500,
+      "m": 0,
+      "n": 1,
+      "coefficient_relative_rms": 0.007823253246552597,
+      "westward_psd_relative_l2": 0.00404414778669834
+    },
+    {
+      "level": 500,
+      "m": 0,
+      "n": 2,
+      "coefficient_relative_rms": 0.0032495319695386177,
+      "westward_psd_relative_l2": 0.0027637404844296906
+    },
+    {
+      "level": 500,
+      "m": 1,
+      "n": 2,
+      "coefficient_relative_rms": 0.008147961428129775,
+      "westward_psd_relative_l2": 0.003991845266606233
+    },
+    {
+      "level": 500,
+      "m": 2,
+      "n": 2,
+      "coefficient_relative_rms": 0.012036846674336405,
+      "westward_psd_relative_l2": 0.0029811703835896713
+    },
+    {
+      "level": 500,
+      "m": 1,
+      "n": 3,
+      "coefficient_relative_rms": 0.0054565100713494345,
+      "westward_psd_relative_l2": 0.0011785177525993815
+    },
+    {
+      "level": 500,
+      "m": 1,
+      "n": 4,
+      "coefficient_relative_rms": 0.0038720263497298603,
+      "westward_psd_relative_l2": 0.0017851109580564054
+    },
+    {
+      "level": 500,
+      "m": 2,
+      "n": 3,
+      "coefficient_relative_rms": 0.0066547018624915815,
+      "westward_psd_relative_l2": 0.0023230368787157413
+    },
+    {
+      "level": 500,
+      "m": 3,
+      "n": 3,
+      "coefficient_relative_rms": 0.006855286785969326,
+      "westward_psd_relative_l2": 0.0019683210107838585
+    }
+  ],
+  "note": "One-year sensitivity check. This cannot establish all-year convergence. Seasonal fit and spectral power can be unstable for weak modes."
+}
