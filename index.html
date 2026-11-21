@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ERA5 planetary-wave spectra and kinetic energy by spherical-harmonic degree. Initial Madden and historical comparisons, computed on Unity.">
+  <meta name="theme-color" content="#f5f4ef">
+  <title>Planetary waves & the energy spectrum · ERA5 Gallery</title>
+  <style>
+    :root{color-scheme:light;--paper:#f5f4ef;--ink:#202e35;--muted:#526169;--link:#315e63;--line:#d4d8d3;--wash:#ebe9de;--gold:#ac8951}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:1160px;margin:auto;padding:30px 32px 70px}a{color:var(--link);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:4px}h1,h2,h3{line-height:1.2;letter-spacing:-.025em}h1{font-size:clamp(2.25rem,4.8vw,3.5rem);max-width:980px;margin:35px 0 28px;font-weight:750}h2{font-size:1.8rem;margin:0 0 22px}h3{font-size:1.2rem;margin:27px 0 12px}p{margin:14px 0}.meta{font-size:.875rem;color:var(--muted)}.summary{border-left:4px solid var(--gold);background:var(--wash);padding:16px 20px}.summary p{margin:0}.lede{max-width:1010px}.nav{display:flex;flex-wrap:wrap;gap:9px 23px;margin:24px 0 0;padding-bottom:25px;border-bottom:1px solid var(--line)}.scope{display:flex;flex-wrap:wrap;gap:12px 40px;margin:24px 0;color:var(--muted);font-size:.94rem}.scope strong{color:var(--ink)}section{margin-top:54px}figure{margin:26px 0}figure img{display:block;width:100%;height:auto;background:white;border:1px solid var(--line);border-radius:3px}figcaption,.note{font-size:.9rem;color:var(--muted);line-height:1.6}figcaption{margin-top:12px;max-width:1000px}.figure-link{display:block}.figure-action{font-size:.875rem;margin-top:7px;display:inline-block}.controls{display:flex;flex-wrap:wrap;gap:15px 32px;margin:24px 0 12px}.control-group{margin:0;padding:0;border:0;display:flex;gap:8px;flex-wrap:wrap}.control-group legend{font-size:.875rem;color:var(--muted);margin-bottom:7px}button{font:inherit;font-size:.94rem;background:#fff;color:var(--link);border:1px solid #789194;border-radius:5px;padding:9px 16px;cursor:pointer}button[aria-pressed=true]{background:var(--link);border-color:var(--link);color:#fff}button:hover{box-shadow:0 0 0 1px var(--link)}.plot-label{font-size:1.08rem;margin:22px 0 4px;font-weight:650}.table-wrap{overflow:auto;margin:22px 0}table{border-collapse:collapse;width:100%;font-size:.94rem;text-align:left}caption{text-align:left;color:var(--muted);font-size:.875rem;margin-bottom:10px}th,td{border-bottom:1px solid var(--line);padding:11px 16px 11px 0}th{font-weight:650;white-space:nowrap}td{font-variant-numeric:tabular-nums}.review{color:#775623;font-weight:650}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:36px}.small-figure{max-width:900px}.download-list{list-style:none;padding:0;margin:20px 0}.download-list li{padding:15px 0;border-bottom:1px solid var(--line)}.download-list strong{display:block}.download-list span{font-size:.9rem;color:var(--muted)}.links{display:flex;flex-wrap:wrap;gap:9px 22px}.sources{font-size:.94rem;padding-left:20px}.sources li{padding:5px 0}footer{margin-top:50px;padding-top:24px;border-top:1px solid var(--line);font-size:.875rem;color:var(--muted)}details{border-block:1px solid var(--line);padding:15px 0;margin:22px 0}summary{cursor:pointer;color:var(--link);font-weight:600}code{font-size:.9em;overflow-wrap:anywhere}.status-line{font-size:.875rem;color:var(--muted)}@media(max-width:650px){main{padding:22px 20px 44px}h1{margin-top:27px}h2{font-size:1.55rem}section{margin-top:40px}.two-col{grid-template-columns:1fr;gap:0}.scope{gap:6px 22px}.summary{padding:14px 16px}.nav{gap:7px 18px}th,td{padding-right:20px}.controls{gap:15px}button{padding:9px 13px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{body{background:white}button,.nav{display:none}main{padding:0}section{break-inside:avoid}a{color:inherit}}
+  </style>
+</head>
+<body>
+<main id="top">
+  <header>
+    <div class="meta"><a href="https://github.com/npizzo/n2-era5-madden">ERA5 spectral project</a> · Completed on Unity · 21 November 2026</div>
+    <h1>Planetary waves &amp;<br>the energy spectrum</h1>
+    <div class="summary"><p><strong>The first comparisons are complete.</strong> ERA5 shows westward excess near Madden’s 5- and 4-day targets; the 10-day target is weak under this estimator. The historical-window energy spectrum has a slope of <strong>−2.84 over degrees 10–20</strong>. These are initial comparisons: the strict individual-coefficient resolution check did not pass.</p></div>
+    <p class="lede">From planetary-wave periods to the distribution of kinetic energy across spherical-harmonic degree. All atmospheric processing and numerical tests ran on Unity. The figures below retain the seasonal differences, historical context, and limits of what the comparisons establish.</p>
+    <div class="scope"><span><strong>1979–2022</strong> ERA5 record</span><span><strong>64,284</strong> six-hourly samples</span><span><strong>300 &amp; 500 hPa</strong></span><span><strong>n = 1–59</strong> energy spectrum</span></div>
+    <nav class="nav" aria-label="Gallery sections"><a href="#madden">Madden comparison</a><a href="#energy">Energy by degree</a><a href="#historical">Historical context</a><a href="#low-degree">The n=2 component</a><a href="#checks">Numerical checks</a><a href="#data">Data &amp; provenance</a></nav>
+  </header>
+
+  <section id="madden" aria-labelledby="madden-title">
+    <h2 id="madden-title">Madden’s planetary-wave targets</h2>
+    <p>Five spherical-harmonic targets, two pressure levels, and separate winter and summer spectra. This is an ERA5 comparison with Madden (2007), whose NCEP/NCAR record and EOF-based analysis differed. Select a level and season to inspect the temporal spectra.</p>
+    <div class="controls">
+      <fieldset class="control-group"><legend>Pressure level</legend><button type="button" data-level="300" aria-pressed="true">300 hPa</button><button type="button" data-level="500" aria-pressed="false">500 hPa</button></fieldset>
+      <fieldset class="control-group"><legend>Season</legend><button type="button" data-season="ALL" aria-pressed="true">All seasons</button><button type="button" data-season="DJF" aria-pressed="false">Winter · DJF</button><button type="button" data-season="JJA" aria-pressed="false">Summer · JJA</button></fieldset>
+    </div>
+    <p id="plot-label" class="plot-label" aria-live="polite">300 hPa · All seasons</p>
+    <figure>
+      <a id="madden-image-link" class="figure-link" href="results/stage1_spectra.png" target="_blank" rel="noopener"><img id="madden-image" src="results/stage1_spectra.png" alt="Five Madden target-mode temporal spectra at 300 hPa, all seasons" width="1870" height="1870"></a>
+      <figcaption id="madden-caption">All-season spectra use 128-day windows. Seasonal spectra use 64-day windows wholly within individual seasons; disconnected winters are not concatenated. The different window lengths give different frequency resolutions.</figcaption>
+      <a id="madden-full" class="figure-action" href="results/stage1_spectra.png" target="_blank" rel="noopener">Open selected figure at full resolution</a>
+    </figure>
+    <h3>Clearer 5- and 4-day features; a weak 10-day target</h3>
+    <p>In the primary 300 hPa all-season analysis, the westward target-band maxima are near 4.923 and 3.765 days for the 5- and 4-day targets. The 10-day target does not exceed the chosen background reference. Peak selection within a target band is not an independent wave identification.</p>
+    <div class="table-wrap"><table><caption>Primary 300 hPa, all-season comparison. (m,n) denotes zonal order and total degree.</caption><thead><tr><th scope="col">Target (m,n)</th><th scope="col">Expected period</th><th scope="col">Target-band peak</th><th scope="col">Peak / background</th><th scope="col">Above reference?</th></tr></thead><tbody><tr><td>(1,2)</td><td>5 days</td><td>4.923 days</td><td>1.691</td><td>Yes</td></tr><tr><td>(1,3)</td><td>10 days</td><td>9.143 days</td><td>1.031</td><td class="review">No</td></tr><tr><td>(1,4)</td><td>16 days</td><td>18.286 days</td><td>1.265</td><td>Yes</td></tr><tr><td>(2,3)</td><td>4 days</td><td>3.765 days</td><td>1.532</td><td>Yes</td></tr><tr><td>(3,3)</td><td>2 days</td><td>2.169 days</td><td>1.152</td><td>Yes</td></tr></tbody></table></div>
+    <p class="note">The running-median background and approximate χ² bounds are exploratory pointwise references. Background uncertainty, correlated frequency bins, and the search across periods are not calibrated. EOF-pair interpretation and identification against Hough structures remain scientific review tasks.</p>
+    <details><summary>Open any of the six temporal-spectrum figures</summary><p class="links"><a href="results/stage1_spectra.png">300 hPa · all</a><a href="results/stage1_spectra_300_DJF.png">300 hPa · DJF</a><a href="results/stage1_spectra_300_JJA.png">300 hPa · JJA</a><a href="results/stage1_spectra_500_ALL.png">500 hPa · all</a><a href="results/stage1_spectra_500_DJF.png">500 hPa · DJF</a><a href="results/stage1_spectra_500_JJA.png">500 hPa · JJA</a></p></details>
+    <p><a href="https://github.com/npizzo/n2-era5-madden/blob/main/results/STAGE1_REPORT.md">Full Madden comparison</a> · <a href="results/summary.json">Numerical peak and seasonal results</a></p>
+  </section>
+
+  <section id="energy" aria-labelledby="energy-title">
+    <h2 id="energy-title">Kinetic energy across spherical-harmonic degree</h2>
+    <p>Rotational, divergent, and total kinetic energy are summed over all orders at each degree n. Energy is averaged after the transform. The lower panels compare all-season, northern-winter, and northern-summer spectra.</p>
+    <figure><a class="figure-link" href="results/energy_degree_spectra.png" target="_blank" rel="noopener"><img src="results/energy_degree_spectra.png" alt="Kinetic energy versus spherical-harmonic degree at 300 and 500 hPa, including seasonal spectra" loading="lazy" width="2040" height="1530"></a><figcaption>Gray bands show the 5–95% spread of annual spectra. Dotted n⁻³ lines are shape guides normalized to ERA5; their amplitudes are not historical measurements. Click a figure to open its full-resolution image.</figcaption></figure>
+    <div class="two-col"><div><h3>The fitted range matters</h3><p>The 300 hPa all-season total-KE slope is <strong>−2.589 over n=10–20</strong> and <strong>−2.852 over n=13–40</strong>. At 500 hPa, the corresponding slopes are −2.590 and −2.729.</p></div><div><h3>Resolved synoptic scales</h3><p>With n≤59, the shortest nominal wavelength is about <strong>678 km</strong>. This grid does not resolve the aircraft mesoscale −5/3 range below roughly 300–400 km.</p></div></div>
+    <p class="note">Year-bootstrap intervals describe year-to-year sampling variability. Reanalysis, resolution, and spectral-model uncertainty are additional. A −3 slope alone does not establish an enstrophy cascade.</p>
+    <p><a href="results/energy_degree_spectra.csv">Download degree spectra (CSV)</a> · <a href="results/energy_degree_statistics.nc">Statistics (NetCDF)</a></p>
+  </section>
+
+  <section id="historical" aria-labelledby="historical-title">
+    <h2 id="historical-title">Comparison with historical spectra</h2>
+    <p>The closest sampling comparison uses July 1993–1997 at 00/12 UTC and an approximate 92–353 hPa layer, following the UKMO benchmark in Koshyk &amp; Hamilton (2001). ERA5’s total vector-KE slope over n=10–20 is <strong>−2.836</strong>, compared with the published approximate −3 behavior.</p>
+    <figure><a class="figure-link" href="results/historical_degree_comparison.png" target="_blank" rel="noopener"><img src="results/historical_degree_comparison.png" alt="ERA5 July 1993–1997 layer spectra with the UKMO comparison interval highlighted at degrees 10–20" loading="lazy" width="2380" height="816"></a><figcaption>The green band marks the historical total-KE comparison interval. The dashed scalar-u,v spectrum and vector spectrum assign energy differently among the lowest degrees. Historical ordinates were not digitized; the gray lines are slope guides, not measured historical amplitudes. The original vertical quadrature is not replicated.</figcaption></figure>
+    <div class="table-wrap"><table><thead><tr><th scope="col">Historical benchmark</th><th scope="col">What is compared</th><th scope="col">Important distinction</th></tr></thead><tbody><tr><td><a href="https://journals.ametsoc.org/view/journals/atsc/40/1/1520-0469_1983_040_0164_lstdti_2_0_co_2.xml">Boer &amp; Shepherd (1983)</a></td><td>Stationary, seasonally sensitive low degrees versus transient higher degrees</td><td>Qualitative FGGE comparison; different sampling</td></tr><tr><td><a href="https://doi.org/10.1175/1520-0469(1985)042%3C0950:ACOAWS%3E2.0.CO;2">Nastrom &amp; Gage (1985)</a></td><td>Large-scale steepening toward −3</td><td>Aircraft along-track spectra; mesoscale range unresolved here</td></tr><tr><td><a href="https://www.gfdl.noaa.gov/bibliography/related_files/koshyk0101.pdf">Koshyk &amp; Hamilton (2001), Fig. 4</a></td><td>UKMO July 1993–1997, 92–353 hPa, approximately −3 over n=10–20</td><td>Matched months and years; approximate pressure layer</td></tr></tbody></table></div>
+    <p><a href="https://github.com/npizzo/n2-era5-madden/blob/main/results/SPECTRAL_CONTENT_REPORT.md">Full spectral-content and historical report</a> · <a href="results/historical_window_layer.nc">Matched ERA5 layer (NetCDF)</a></p>
+  </section>
+
+  <section id="low-degree" aria-labelledby="low-title">
+    <h2 id="low-title">The n=2 component in context</h2>
+    <p>At 300 hPa, the all-season vector spectrum gives <strong>E₁=2.471, E₂=9.317, and E₃=42.840 m² s⁻²</strong>. Degree 2 lies below degree 3, but is not a local minimum relative to both neighboring degrees.</p>
+    <figure><a class="figure-link" href="results/energy_degree_decomposition.png" target="_blank" rel="noopener"><img src="results/energy_degree_decomposition.png" alt="Low-degree kinetic energy partitioned into long-term mean flow and transient content, with divergent fractions by season" loading="lazy" width="2040" height="1360"></a><figcaption>The upper panels show the all-season partition into energy of the long-term mean flow and residual transient energy. The lower panels show divergent fractions by season. The transient component is not a frequency-filtered wave band; the all-season residual includes seasonal variation.</figcaption></figure>
+    <h3>Seasonal mean circulation</h3>
+    <figure class="small-figure"><a class="figure-link" href="results/zeta20_annual_cycle.png" target="_blank" rel="noopener"><img src="results/zeta20_annual_cycle.png" alt="Monthly climatology of the zonal degree-2 vorticity coefficient at 300 hPa" loading="lazy" width="1050" height="600"></a><figcaption>The zonal n=2 vorticity coefficient at 300 hPa. The mean and four annual harmonics are removed before the temporal spectral analysis, using actual timestamps. Spectral content and mean-flow fractions alone do not diagnose condensation or nonlinear energy transfer.</figcaption></figure>
+  </section>
+
+  <section id="checks" aria-labelledby="checks-title">
+    <h2 id="checks-title">Numerical checks and interpretation limits</h2>
+    <div class="table-wrap"><table><thead><tr><th scope="col">Check</th><th scope="col">Result</th></tr></thead><tbody><tr><td>Synthetic transform, energy, wave-sign, and seasonal checks</td><td>6 passed</td></tr><tr><td>Real-data spectral energy closure</td><td>Largest relative error 9.05 × 10⁻¹⁶</td></tr><tr><td>Whole-field coefficient difference, 1.5° versus 1°</td><td>0.380–0.527%</td></tr><tr><td>Every sampled target coefficient differs by less than 1%</td><td class="review">Failed; maximum 7.91% on a weak mode</td></tr><tr><td>Full 1979 target-mode westward PSD sensitivity</td><td>Approximately 0.09–0.40%</td></tr></tbody></table></div>
+    <p>The small full-year PSD differences do not establish full-record convergence or reverse the failed strict criterion. Energy closure checks the spectral representation and reconstructed winds; it does not equate truncated reconstructed energy with the raw ERA5 wind energy.</p>
+    <p>This is a partial comparison with Madden, not a certified replication. Hough-mode identification and EOF-pair interpretation remain open. Pattern-speed, nonlinear-transfer, and forecast experiments have not been run.</p>
+    <p><a href="https://github.com/npizzo/n2-era5-madden/blob/main/results/SETUP_REPORT.md">Setup and validation report</a> · <a href="results/resolution_detail.json">Coefficient-resolution audit</a> · <a href="results/resolution_year.json">Full-year sensitivity</a></p>
+  </section>
+
+  <section id="data" aria-labelledby="data-title">
+    <h2 id="data-title">Data and provenance</h2>
+    <p>The source code, Unity job scripts, figures, numerical summaries, and frozen environment are retained in the project repository. The initial release includes the extracted datasets and file-integrity checksums.</p>
+    <ul class="download-list"><li><strong><a href="https://github.com/npizzo/n2-era5-madden/releases/download/v0.1-initial-comparison/stage1-coefficients-1979-2022.tar.gz">Download the 44-year coefficient archive</a></strong><span>299 MB · All annual coefficient datasets, 1979–2022 · <a href="results/archive.sha256">SHA256 checksum</a></span></li><li><strong><a href="https://github.com/npizzo/n2-era5-madden/releases/download/v0.1-initial-comparison/energy-and-validation-data.tar.gz">Download energy and validation data</a></strong><span>63 MB · Divergent energy, historical sample, fine-grid sensitivity, and pilot data · <a href="results/energy-archive.sha256">SHA256 checksum</a></span></li></ul>
+    <p class="links"><a href="https://github.com/npizzo/n2-era5-madden">Repository</a><a href="https://github.com/npizzo/n2-era5-madden/releases/tag/v0.1-initial-comparison">Initial release</a><a href="https://github.com/npizzo/n2-era5-madden/tree/main/src">Analysis source</a><a href="https://github.com/npizzo/n2-era5-madden/tree/main/slurm">Unity jobs</a><a href="https://github.com/npizzo/n2-era5-madden/blob/main/docs/methods.md">Methods</a><a href="results/environment-explicit.txt">Environment</a><a href="results/source.sha256">Source hashes</a><a href="results/job-accounting.tsv">Job accounting</a></p>
+    <p class="note">Data source: <a href="https://weatherbench2.readthedocs.io/en/latest/data-guide.html">WeatherBench 2 ERA5</a>. Wave benchmark: <a href="https://doi.org/10.1111/j.1600-0870.2007.00257.x">Madden (2007)</a>. Historical references are linked above. The <a href="https://github.com/npizzo/n2-era5-madden/blob/main/docs/original_plan.md">supplied plan</a> is preserved as reference material.</p>
+  </section>
+  <footer><a href="#top">Back to top</a> · ERA5 spectral gallery · Initial comparison, 21 November 2026</footer>
+</main>
+<script>
+  (()=>{
+    let level='300',season='ALL';
+    const names={ALL:'All seasons',DJF:'Northern winter (DJF)',JJA:'Northern summer (JJA)'};
+    function update(){
+      const file=level==='300'&&season==='ALL'?'stage1_spectra.png':`stage1_spectra_${level}_${season}.png`;
+      const path='results/'+file;
+      document.getElementById('madden-image').src=path;
+      document.getElementById('madden-image').alt=`Five Madden target-mode temporal spectra at ${level} hPa, ${names[season]}`;
+      document.getElementById('madden-image-link').href=path;
+      document.getElementById('madden-full').href=path;
+      document.getElementById('plot-label').textContent=`${level} hPa · ${names[season]}`;
+      document.querySelectorAll('[data-level]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.level===level)));
+      document.querySelectorAll('[data-season]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.season===season)));
+    }
+    document.querySelectorAll('[data-level]').forEach(b=>b.addEventListener('click',()=>{level=b.dataset.level;update()}));
+    document.querySelectorAll('[data-season]').forEach(b=>b.addEventListener('click',()=>{season=b.dataset.season;update()}));
+  })();
+</script>
+</body>
+</html>
