@@ -29,3 +29,9 @@ The public source is the [WeatherBench 2 ERA5 archive](https://weatherbench2.rea
 ## Observed resolution limits and follow-up
 
 The ten-date audit on Unity passed whole-field L2 agreement below 1%, but failed the literal all-degree/all-coefficient target. Individual weak-mode relative differences are larger. This failed criterion is retained rather than silently replaced with an aggregate criterion. To assess its effect on spectra, a separate 1979 extraction at 1° compares coefficient RMS and westward power against the 1.5° production year. That sensitivity check cannot prove convergence of the entire 44-year record. The full record is analyzed to obtain the requested initial comparison, with the unresolved strict criterion explicitly flagged.
+
+## Requested companion: degree-space spectral content
+
+A follow-up user request added the comparison of energy versus total spherical-harmonic degree with historical measurements. The companion extraction adds divergence at the same six-hourly times for all 44 years. Its separate historical window uses July 1993–1997 at 00/12 UTC, and a pressure-weighted 92–353 hPa average with linearly interpolated spectral-energy endpoints. This approximates the UKMO comparison window and layer in Koshyk & Hamilton (2001); it does not recreate their model-level quadrature.
+
+Comparisons with Boer & Shepherd, Nastrom & Gage and Koshyk & Hamilton are limited to published spectral shape, scale ranges and decomposition. No historical spectral ordinates were digitized. Guide curves are normalized to ERA5 and labeled accordingly. The data provide n≤59 (about 678 km nominal minimum wavelength), so the aircraft mesoscale −5/3 range is unresolved. Direct scalar u,v spectra are computed for the historical window to illustrate their different low-degree attribution from the project's vector/vorticity-divergence definition. This is important for interpreting n=2.
