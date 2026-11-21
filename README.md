@@ -6,6 +6,8 @@ Code, numerical results, figures and reproducibility records for ERA5 spherical-
 
 ## Results
 
+**[Open the visual gallery — all figures, captions and data links](GALLERY.md)**
+
 - **[Madden comparison](results/STAGE1_REPORT.md):** 64,284 six-hourly samples, 1979–2022, at 300 and 500 hPa. The 5-day and 4-day targets show clear westward excess; the 10-day target is weak under this estimator. Includes seasonal spectra and EOF/PC-pair diagnostics.
 - **[Energy versus spherical-harmonic degree](results/SPECTRAL_CONTENT_REPORT.md):** rotational, divergent and total KE for n=1–59, seasonal variation, mean-flow/transient partitions, and n=2 content. Includes comparisons with Boer & Shepherd (1983), Nastrom & Gage (1985), and the UKMO spectra in Koshyk & Hamilton (2001).
 - **[Setup and numerical checks](results/SETUP_REPORT.md):** tests, energy closure, grid-resolution audit and pilot timings.
