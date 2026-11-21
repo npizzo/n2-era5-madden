@@ -130,13 +130,15 @@ def main():
     omega=float((np.sqrt(3)/2*z.sel(level=300,n=1,m=0).real.values[djf]).mean())
     z20=[float(z.sel(level=300,n=2,m=0).real.values[months==month].mean()) for month in range(1,13)]
     plt.figure(figsize=(7,4));plt.plot(np.arange(1,13),z20,'o-');plt.xlabel('Month');plt.ylabel('Mean ζ₂⁰ (s⁻¹)');plt.title('300 hPa annual climatology');plt.tight_layout();plt.savefig(args.out/'zeta20_annual_cycle.png',dpi=150);plt.close()
-    summary={'status':'REVIEW_REQUIRED','job_id':os.environ.get('SLURM_JOB_ID'),'years':[1979,2022],'samples':len(time),'omega_djf_300':omega,'orientation_positive_djf':omega>0,'zeta20_monthly':z20,'spectra':rows,'eof':eof_summary}
+    checks=json.loads((args.out/'data_checks.json').read_text())
+    detail=json.loads((args.out/'resolution_detail.json').read_text())
+    summary={'numerical_checks':checks,'resolution_max_individual_target_difference':detail['max_madden_mode_relative'],'status':'REVIEW_REQUIRED','job_id':os.environ.get('SLURM_JOB_ID'),'years':[1979,2022],'samples':len(time),'omega_djf_300':omega,'orientation_positive_djf':omega>0,'zeta20_monthly':z20,'spectra':rows,'eof':eof_summary}
     (args.out/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')
     lines=['# Stage 1 — ERA5 comparison to Madden (2007)','','Status: **REVIEW REQUIRED**. No Stage 2 computation is enabled.','',f'Analysis job: {summary["job_id"]}. {len(time)} six-hourly samples, 1979–2022.',f'DJF 300 hPa superrotation ω = {omega:.6g} s⁻¹; expected-positive check: {omega>0}.','','## Primary 300 hPa, all-season spectrum','','| (m,n) | Expected (d) | Peak in target band (d) | Peak/background | West/east at peak | Above pointwise reference |','|---|---:|---:|---:|---:|---|']
     for r in rows:
         if (r['level'],r['season'])==(300,'ALL'):
             lines.append(f"| ({r['m']},{r['n']}) | {r['expected_days']:g} | {r['peak_days']:.3f} | {r['peak_background']:.3f} | {r['west_east']:.3f} | {r['above_pointwise_reference']} |")
-    lines+=['','![Primary spectra](stage1_spectra.png)','','## Seasonal and height comparison','','| (m,n) | 300 DJF peak/background | 300 JJA | 500 ALL |','|---|---:|---:|---:|']
+    lines+=['','## Numerical checks','',f'Synthetic suite: see synthetic-tests.txt. Energy closure passed: {checks["energy_pass"]}; maximum relative error {max(r["energy_closure_relative"] for r in checks["checks"]):.3g}.',f'Whole-field resolution L2 <1%: {checks["resolution_l2_within_one_percent"]}. All individual degrees <1%: {checks["resolution_all_degrees_within_one_percent"]}. The strict resolution criterion is therefore NOT satisfied.',f'Maximum individual target-mode resolution difference over sampled dates: {detail["max_madden_mode_relative"]:.2%}. Small-amplitude modes amplify relative error. See resolution_detail.json and resolution_year.json for absolute errors and the full-year sensitivity check.','','![Primary spectra](stage1_spectra.png)','','## Seasonal and height comparison','','| (m,n) | 300 DJF peak/background | 300 JJA | 500 ALL |','|---|---:|---:|---:|']
     for m,n,_,_ in MODES:
         values=[next(r['peak_background'] for r in rows if (r['m'],r['n'],r['level'],r['season'])==(m,n,lev,season)) for lev,season in [(300,'DJF'),(300,'JJA'),(500,'ALL')]]
         lines.append(f'| ({m},{n}) | '+ ' | '.join(f'{v:.3f}' for v in values)+' |')
