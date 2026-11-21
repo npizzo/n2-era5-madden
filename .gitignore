@@ -6,3 +6,7 @@ logs/
 data/
 *.nc
 *.part
+.conda-pkgs/
+source*.tar.gz
+._*
+archives/
