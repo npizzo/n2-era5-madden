@@ -1,0 +1,16 @@
+name: n2-era5-madden
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - xarray
+  - zarr<3
+  - dask
+  - fsspec
+  - aiohttp
+  - gcsfs
+  - pyshtools
+  - matplotlib
+  - netcdf4
+  - pytest
