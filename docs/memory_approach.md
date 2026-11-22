@@ -48,3 +48,11 @@ Do not assume that higher degrees decorrelate monotonically faster, that degree 
 New paths: src/memory_tools.py, src/extract_memory_height.py, src/analyze_memory.py, tests/test_memory.py, slurm/memory_*.sbatch; data/memory-v1 and results/memory-v1. Existing outputs are preserved. Synthetic validation and a 200-step height pilot precede the 44-year extraction, with six concurrent CPU tasks; the 1° sensitivity extraction and final analysis follow. All atmospheric calculations run on Unity compute nodes.
 
 Source-note SHA256: 20be459e30d3c2e02142df18b081022c2e4177bee249effb3002ea7a5da367de
+
+## Completed run and post-inspection sensitivity
+
+The primary run completed on Unity (2095747 annual extraction, 2095748 fine grid, 2095749 analysis). Its original specification is preserved verbatim in [method-at-run.md](../results/memory-v1/method-at-run.md); source.sha256 refers to that version of this document.
+
+Rapid oscillations in the height correlations prompted one additional, explicitly post-inspection control (job 2096100). Subtract calendar-month-dependent UTC-hour departures from each monthly mean, estimated across 1979–2022, while preserving monthly means. Recompute the same correlation, n=3–5 fit and 400-year-resample uncertainty for all and nonzonal orders. This tests sensitivity to a repeating sampling-time signal, without identifying its physical cause. The primary analysis remains unchanged. The positive all-order tail after this removal is exploratory and must be reported alongside the negative nonzonal comparison.
+
+See the [findings and interpretation](../results/memory-v1/READOUT.md), [primary report](../results/memory-v1/REPORT.md), and [UTC summary](../results/memory-v1/utc_control_summary.json). All six new numerical tests passed; the separate one-year height resolution check is documented without overwriting the earlier vorticity-resolution finding.
