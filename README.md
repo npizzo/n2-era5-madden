@@ -4,6 +4,12 @@ Code, numerical results, figures and reproducibility records for ERA5 spherical-
 
 **Status: initial comparisons completed; scientific review required.** Six synthetic tests passed. The strict individual-coefficient resolution criterion failed, and the 10-day Madden target did not exceed the chosen background reference. This is a partial comparison, not a certified replication or an automatic pass to further dynamical hypotheses.
 
+## Latest result: the degree-2 tail is zonal
+
+The [order-by-order covariance decomposition](results/memory-orders-v1/READOUT.md) is complete. Over the specified physical lags 5–30 days, m=0 supplies the positive degree-2 tail while nonzonal orders make a small negative contribution. The zonal component contains 35.9% of original anomaly variance and 40.5% after UTC-cycle removal. Its 1/e timescale is about 9 days, comparable to the zonal components of degrees 3 and 4. The result supports a larger zonal share of the degree-normalized tail, without establishing a uniquely slow degree-2 mode. All eight memory tests passed; the previous curves reconstruct to machine precision.
+
+[New figures and interpretation](results/memory-orders-v1/READOUT.md) · [Order metrics](results/memory-orders-v1/order_metrics.csv) · [Reproducible annual products](results/memory-orders-v1/annual_products.nc)
+
 ## Current follow-up: atmospheric memory
 
 The [revised approach](docs/memory_approach.md) follows the 21 November research note: calculate 500 hPa height correlations in each degree's theoretical rotating frame, fit the n=3–5 time scaling, and test n=2 without fitting it. The amplitude exponent is fixed to a=0 by zero-lag normalization; a free-amplitude fit is retained as a sensitivity check.

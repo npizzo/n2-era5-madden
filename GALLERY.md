@@ -4,6 +4,22 @@ Results from Unity: 64,284 six-hourly samples from 1979–2022 at 300 and 500 hP
 
 [Code and overview](README.md) · [Madden report](results/STAGE1_REPORT.md) · [Energy-content report](results/SPECTRAL_CONTENT_REPORT.md) · [Numerical checks](results/SETUP_REPORT.md) · [Download datasets](https://github.com/npizzo/n2-era5-madden/releases)
 
+## Which orders produce the memory tail?
+
+[Order-resolved findings](results/memory-orders-v1/READOUT.md) · [Specification](docs/order_memory_approach.md) · [Numerical report](results/memory-orders-v1/REPORT.md)
+
+The 5–30-day degree-2 covariance tail comes from m=0. Nonzonal orders contribute a small negative signed average. UTC-cycle removal leaves the zonal absolute covariance almost unchanged, while reducing total variance. The zonal 1/e timescale is about 9 days, comparable to degrees 3 and 4; degree 2 has a larger zonal variance fraction.
+
+![Degree-2 covariance budget](results/memory-orders-v1/order_covariance.png)
+
+![Each order normalized by its own energy](results/memory-orders-v1/order_correlations.png)
+
+![Variance and tail contributions for degrees 2–5](results/memory-orders-v1/order_degree_comparison.png)
+
+![Paired contrasts in the fixed 5–30-day window](results/memory-orders-v1/order_tail_contrasts.png)
+
+The degree-2 normalized tail is larger than degrees 3–5 under this particular measure. It is dominated by the zonal contribution. Signed averaging, window selection and normalization are explicit; no universal collapse or forecast-skill claim follows. [Download numerical curves](results/memory-orders-v1/order_curves.nc) and [annual products](results/memory-orders-v1/annual_products.nc).
+
 ## Rotating-frame atmospheric memory
 
 [Findings and interpretation](results/memory-v1/READOUT.md) · [Revised approach](docs/memory_approach.md) · [Primary numerical report](results/memory-v1/REPORT.md)
