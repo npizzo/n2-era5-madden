@@ -1,0 +1,72 @@
+{
+  "scope": "Post-inspection sensitivity; the primary preregistered comparison is unchanged. Remove month-dependent UTC-hour departures from each monthly mean, using all 44 years. This removes a repeating sampling-time cycle, without attributing it to physical tides versus analysis effects. Six-hour sampling does not fully resolve semidiurnal phase.",
+  "job_id": "2096100",
+  "sectors": {
+    "all_m": {
+      "a": 0.0,
+      "b": -0.008951957597976354,
+      "mse": 0.009833551491426583,
+      "unscaled_mse": 0.009834833661533118,
+      "n2_mean_excess": 0.041204689791194085,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10,
+      "bootstrap": {
+        "replicates": 400,
+        "b_ci95": [
+          -0.0709936045667459,
+          0.0748406737111763
+        ],
+        "n2_excess_ci95": [
+          0.01872209384688744,
+          0.06446646632568233
+        ],
+        "bootstrap_fraction_excess_positive": 1.0
+      },
+      "removed_n2_variance_fraction": 0.11525320037089717,
+      "n2_first_efold_days": 0.8587402093372688,
+      "n2_first_zero_days": null
+    },
+    "nonzonal": {
+      "a": 0.0,
+      "b": 0.7483907817239365,
+      "mse": 0.014509105258128154,
+      "unscaled_mse": 0.0178566069487481,
+      "n2_mean_excess": -0.018133046241450144,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10,
+      "bootstrap": {
+        "replicates": 400,
+        "b_ci95": [
+          0.5316182285546017,
+          0.8470122596209874
+        ],
+        "n2_excess_ci95": [
+          -0.02442103192319823,
+          -0.011744706643771521
+        ],
+        "bootstrap_fraction_excess_positive": 0.0
+      },
+      "removed_n2_variance_fraction": 0.17846394021653875,
+      "n2_first_efold_days": 0.5728789380205802,
+      "n2_first_zero_days": 0.8268020027537107
+    }
+  }
+}

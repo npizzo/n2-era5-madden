@@ -1,0 +1,43 @@
+{
+  "1": {
+    "coefficient_relative_l2": 6.42069383054118e-05,
+    "max_abs_correlation_difference_0_60d": 7.054045871556641e-05
+  },
+  "2": {
+    "coefficient_relative_l2": 0.00012813100266255523,
+    "max_abs_correlation_difference_0_60d": 5.276358865308195e-05
+  },
+  "3": {
+    "coefficient_relative_l2": 0.0001999965537536733,
+    "max_abs_correlation_difference_0_60d": 6.204951299070005e-05
+  },
+  "4": {
+    "coefficient_relative_l2": 0.00025689092555355927,
+    "max_abs_correlation_difference_0_60d": 4.269871335838005e-05
+  },
+  "5": {
+    "coefficient_relative_l2": 0.0003753597052264915,
+    "max_abs_correlation_difference_0_60d": 6.8289883606798e-05
+  },
+  "6": {
+    "coefficient_relative_l2": 0.0006447972871993836,
+    "max_abs_correlation_difference_0_60d": 6.613218890044736e-05
+  },
+  "7": {
+    "coefficient_relative_l2": 0.0006887134115069217,
+    "max_abs_correlation_difference_0_60d": 8.391962261410785e-05
+  },
+  "8": {
+    "coefficient_relative_l2": 0.0008759245636714963,
+    "max_abs_correlation_difference_0_60d": 9.458021198769165e-05
+  },
+  "9": {
+    "coefficient_relative_l2": 0.0010826401053717844,
+    "max_abs_correlation_difference_0_60d": 0.00014496380387826746
+  },
+  "10": {
+    "coefficient_relative_l2": 0.0013417187583816105,
+    "max_abs_correlation_difference_0_60d": 0.00022674732385613572
+  },
+  "scope": "1979 only, annual-harmonic removal fitted separately to that year on each grid; not full-record convergence"
+}

@@ -1,0 +1,2034 @@
+{
+  "primary": {
+    "all_m": {
+      "a": 0.0,
+      "b": 0.011141080428300448,
+      "mse": 0.009778943621194539,
+      "unscaled_mse": 0.009780708578998846,
+      "n2_mean_excess": 0.014284773486252914,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10,
+      "bootstrap": {
+        "replicates": 400,
+        "b_ci95": [
+          -0.069212676546849,
+          0.07528892951483343
+        ],
+        "n2_excess_ci95": [
+          -0.008961630899398181,
+          0.034547917924195946
+        ],
+        "bootstrap_fraction_excess_positive": 0.905
+      },
+      "free_amplitude_fit": {
+        "a": -0.04290643192337605,
+        "b": -0.024706655248767393,
+        "mse": 0.009756730667380182,
+        "unscaled_mse": 0.009780708578998846,
+        "n2_mean_excess": 0.01567672550964439,
+        "at_bound": false,
+        "b_bounds": [
+          -3.0,
+          3.0
+        ],
+        "fit_degrees": [
+          3,
+          4,
+          5
+        ],
+        "fit_window_days_at_n3": 10
+      }
+    },
+    "nonzonal": {
+      "a": 0.0,
+      "b": 0.7477395006830414,
+      "mse": 0.014353405194645253,
+      "unscaled_mse": 0.01774105964754468,
+      "n2_mean_excess": -0.01901056118379235,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10,
+      "bootstrap": {
+        "replicates": 400,
+        "b_ci95": [
+          0.547059885732185,
+          0.8394639606382245
+        ],
+        "n2_excess_ci95": [
+          -0.022280893264287432,
+          -0.01193969339992987
+        ],
+        "bootstrap_fraction_excess_positive": 0.0
+      },
+      "free_amplitude_fit": {
+        "a": 0.20106461840619008,
+        "b": 0.8315584715191997,
+        "mse": 0.01396957070259781,
+        "unscaled_mse": 0.01774105964754468,
+        "n2_mean_excess": -0.014077093675821519,
+        "at_bound": false,
+        "b_bounds": [
+          -3.0,
+          3.0
+        ],
+        "fit_degrees": [
+          3,
+          4,
+          5
+        ],
+        "fit_window_days_at_n3": 10
+      }
+    }
+  },
+  "controls": {
+    "height/raw/ALL/all_m/earth": {
+      "a": 0.0,
+      "b": -2.2517711850362874,
+      "mse": 0.003217861618735626,
+      "unscaled_mse": 0.04243472964248105,
+      "n2_mean_excess": 0.1360468721855393,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/raw/ALL/all_m/rossby_haurwitz": {
+      "a": 0.0,
+      "b": -2.9999947243168106,
+      "mse": 0.05288035704368476,
+      "unscaled_mse": 0.14671950369886816,
+      "n2_mean_excess": 0.24549099232528954,
+      "at_bound": true,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/raw/ALL/nonzonal/earth": {
+      "a": 0.0,
+      "b": 0.5162948879125554,
+      "mse": 0.006359595155732431,
+      "unscaled_mse": 0.009256088455074652,
+      "n2_mean_excess": 0.11238261976316784,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/raw/ALL/nonzonal/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 1.6847836463373689,
+      "mse": 0.02514416977085072,
+      "unscaled_mse": 0.06011208692460079,
+      "n2_mean_excess": -0.027342046915252403,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/raw/DJF/all_m/earth": {
+      "a": 0.0,
+      "b": -0.9060388505088539,
+      "mse": 0.0042507339752463754,
+      "unscaled_mse": 0.009886945604427799,
+      "n2_mean_excess": 0.21292593934565004,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/raw/DJF/all_m/rossby_haurwitz": {
+      "a": 0.0,
+      "b": -2.9999947243168106,
+      "mse": 0.05666464557947053,
+      "unscaled_mse": 0.07125075158133554,
+      "n2_mean_excess": 0.42285312904374966,
+      "at_bound": true,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/raw/DJF/nonzonal/earth": {
+      "a": 0.0,
+      "b": 0.6000123618134304,
+      "mse": 0.0049065818209699215,
+      "unscaled_mse": 0.008434166626930261,
+      "n2_mean_excess": 0.1796849007469051,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/raw/DJF/nonzonal/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 1.7074246196016936,
+      "mse": 0.029985150247907245,
+      "unscaled_mse": 0.0688305703574495,
+      "n2_mean_excess": -0.045612399856178064,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/raw/JJA/all_m/earth": {
+      "a": 0.0,
+      "b": -2.9631269172295776,
+      "mse": 0.0010879731473537255,
+      "unscaled_mse": 0.05898486627587485,
+      "n2_mean_excess": 0.09304912259902251,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/raw/JJA/all_m/rossby_haurwitz": {
+      "a": 0.0,
+      "b": -2.9999947243168106,
+      "mse": 0.06254047097104744,
+      "unscaled_mse": 0.19666007141926695,
+      "n2_mean_excess": 0.1446264195830537,
+      "at_bound": true,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/raw/JJA/nonzonal/earth": {
+      "a": 0.0,
+      "b": 0.8821578648599112,
+      "mse": 0.012388101408544336,
+      "unscaled_mse": 0.021799411892800474,
+      "n2_mean_excess": 0.012652284726118596,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/raw/JJA/nonzonal/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 1.6601274707599338,
+      "mse": 0.01786710337631944,
+      "unscaled_mse": 0.05815649093714079,
+      "n2_mean_excess": -0.007288990887017506,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/demeaned/ALL/all_m/earth": {
+      "a": 0.0,
+      "b": 0.10916764369719463,
+      "mse": 0.0011044785507674597,
+      "unscaled_mse": 0.0012472636298142667,
+      "n2_mean_excess": 0.22845788054316526,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/demeaned/ALL/all_m/rossby_haurwitz": {
+      "a": 0.0,
+      "b": -0.12912173007135888,
+      "mse": 0.013106975709876286,
+      "unscaled_mse": 0.013314767966707683,
+      "n2_mean_excess": 0.32839942617217843,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/demeaned/ALL/nonzonal/earth": {
+      "a": 0.0,
+      "b": 0.5623960224186836,
+      "mse": 0.000280738894023106,
+      "unscaled_mse": 0.005497347958722105,
+      "n2_mean_excess": 0.02406481942215651,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/demeaned/ALL/nonzonal/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 1.5377430417726432,
+      "mse": 0.021563795814035145,
+      "unscaled_mse": 0.024460999313177013,
+      "n2_mean_excess": -0.0147308455170123,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/demeaned/DJF/all_m/earth": {
+      "a": 0.0,
+      "b": -0.06152311787660799,
+      "mse": 0.0014322934902244557,
+      "unscaled_mse": 0.0014769566473375746,
+      "n2_mean_excess": 0.11815592873811212,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/demeaned/DJF/all_m/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 1.015599510599738,
+      "mse": 0.02718505998833788,
+      "unscaled_mse": 0.02760611189712419,
+      "n2_mean_excess": 0.17112116835694527,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/demeaned/DJF/nonzonal/earth": {
+      "a": 0.0,
+      "b": 0.5951803830830917,
+      "mse": 0.0009812105360098968,
+      "unscaled_mse": 0.007159216031188106,
+      "n2_mean_excess": 0.08769608399885782,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/demeaned/DJF/nonzonal/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 1.6805514988632717,
+      "mse": 0.026024293798635852,
+      "unscaled_mse": 0.03717029933619761,
+      "n2_mean_excess": -0.033585121871966175,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/demeaned/JJA/all_m/earth": {
+      "a": 0.0,
+      "b": -0.23337963808588316,
+      "mse": 0.004260375165839735,
+      "unscaled_mse": 0.004799509882105866,
+      "n2_mean_excess": 0.29031333681472543,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/demeaned/JJA/all_m/rossby_haurwitz": {
+      "a": 0.0,
+      "b": -0.20758705371941263,
+      "mse": 0.015368821332511506,
+      "unscaled_mse": 0.016383601964121013,
+      "n2_mean_excess": 0.4748636102309164,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/demeaned/JJA/nonzonal/earth": {
+      "a": 0.0,
+      "b": 0.17830058884042788,
+      "mse": 0.0007005297611259933,
+      "unscaled_mse": 0.001150760787435442,
+      "n2_mean_excess": 0.00930482948481933,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/demeaned/JJA/nonzonal/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 1.6860560034101226,
+      "mse": 0.026566882617642038,
+      "unscaled_mse": 0.030437105828347022,
+      "n2_mean_excess": -0.013662541150159923,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/deseasonalized/ALL/all_m/earth": {
+      "a": 0.0,
+      "b": 0.17388633484541927,
+      "mse": 0.00018673015819970716,
+      "unscaled_mse": 0.0007830648162796641,
+      "n2_mean_excess": -0.02844172343266584,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/deseasonalized/ALL/all_m/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 0.011141080428300448,
+      "mse": 0.009778943621194539,
+      "unscaled_mse": 0.009780708578998846,
+      "n2_mean_excess": 0.014284773486252914,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/deseasonalized/ALL/nonzonal/earth": {
+      "a": 0.0,
+      "b": 0.6111351996782007,
+      "mse": 0.0005394107715930935,
+      "unscaled_mse": 0.008401120980718095,
+      "n2_mean_excess": -0.05370014879682341,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/deseasonalized/ALL/nonzonal/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 0.7477395006830414,
+      "mse": 0.014353405194645253,
+      "unscaled_mse": 0.01774105964754468,
+      "n2_mean_excess": -0.01901056118379235,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/deseasonalized/DJF/all_m/earth": {
+      "a": 0.0,
+      "b": -0.057831184985285077,
+      "mse": 0.0006583362344890069,
+      "unscaled_mse": 0.0007312258652282544,
+      "n2_mean_excess": -0.06424658251808979,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/deseasonalized/DJF/all_m/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 0.2502455179704693,
+      "mse": 0.020352130039857086,
+      "unscaled_mse": 0.021085593765241592,
+      "n2_mean_excess": 0.02243686791999027,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/deseasonalized/DJF/nonzonal/earth": {
+      "a": 0.0,
+      "b": 0.34586014303515755,
+      "mse": 0.000448557356717881,
+      "unscaled_mse": 0.003286189936364826,
+      "n2_mean_excess": -0.08267172728194476,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/deseasonalized/DJF/nonzonal/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 1.0615258395370268,
+      "mse": 0.02376351979406603,
+      "unscaled_mse": 0.03248398780404475,
+      "n2_mean_excess": -0.009326219721803744,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/deseasonalized/JJA/all_m/earth": {
+      "a": 0.0,
+      "b": 0.22944585524180175,
+      "mse": 0.00030262497388519697,
+      "unscaled_mse": 0.001252867636659759,
+      "n2_mean_excess": 0.027842247019453408,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/deseasonalized/JJA/all_m/rossby_haurwitz": {
+      "a": 0.0,
+      "b": -0.04845089831917847,
+      "mse": 0.008918619411227704,
+      "unscaled_mse": 0.008958972346717615,
+      "n2_mean_excess": 0.03578377822539593,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/deseasonalized/JJA/nonzonal/earth": {
+      "a": 0.0,
+      "b": 0.7287022492091791,
+      "mse": 0.0038224766650225097,
+      "unscaled_mse": 0.014794395143269034,
+      "n2_mean_excess": -0.005622233717291662,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/deseasonalized/JJA/nonzonal/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 0.6641213673352503,
+      "mse": 0.009770286641165912,
+      "unscaled_mse": 0.012605603267198631,
+      "n2_mean_excess": -0.01371567817812917,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/detrended_anomalies/ALL/all_m/earth": {
+      "a": 0.0,
+      "b": 0.1833675892662379,
+      "mse": 0.00016964326834570352,
+      "unscaled_mse": 0.0008346482924751911,
+      "n2_mean_excess": -0.02450883140261848,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/detrended_anomalies/ALL/all_m/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 0.016332081313111556,
+      "mse": 0.009464391925618789,
+      "unscaled_mse": 0.00946817882686796,
+      "n2_mean_excess": 0.018142169651537574,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/detrended_anomalies/ALL/nonzonal/earth": {
+      "a": 0.0,
+      "b": 0.609538130598096,
+      "mse": 0.0005344197216173787,
+      "unscaled_mse": 0.008383381008123886,
+      "n2_mean_excess": -0.053551282976025925,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/detrended_anomalies/ALL/nonzonal/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 0.7462662912532294,
+      "mse": 0.014309560023950493,
+      "unscaled_mse": 0.017651753628860054,
+      "n2_mean_excess": -0.01920194939078566,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/detrended_anomalies/DJF/all_m/earth": {
+      "a": 0.0,
+      "b": -0.03967640966276968,
+      "mse": 0.0006320875028760047,
+      "unscaled_mse": 0.0006671670213668619,
+      "n2_mean_excess": -0.05765984675204342,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/detrended_anomalies/DJF/all_m/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 0.2675196034445478,
+      "mse": 0.01989474164557013,
+      "unscaled_mse": 0.020686496120329273,
+      "n2_mean_excess": 0.027851075074890076,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/detrended_anomalies/DJF/nonzonal/earth": {
+      "a": 0.0,
+      "b": 0.34979036517933926,
+      "mse": 0.0004203046611895451,
+      "unscaled_mse": 0.0033206136001933885,
+      "n2_mean_excess": -0.08189403186310436,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/detrended_anomalies/DJF/nonzonal/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 1.0584247298531262,
+      "mse": 0.023700015720199166,
+      "unscaled_mse": 0.032334550584933786,
+      "n2_mean_excess": -0.00959867858940826,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/detrended_anomalies/JJA/all_m/earth": {
+      "a": 0.0,
+      "b": 0.24839749718805287,
+      "mse": 0.00036111915746096454,
+      "unscaled_mse": 0.0015032744987579193,
+      "n2_mean_excess": 0.032916392382912066,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/detrended_anomalies/JJA/all_m/rossby_haurwitz": {
+      "a": 0.0,
+      "b": -0.04522967527749747,
+      "mse": 0.008134906698978055,
+      "unscaled_mse": 0.008162943585936016,
+      "n2_mean_excess": 0.04092836791939759,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/detrended_anomalies/JJA/nonzonal/earth": {
+      "a": 0.0,
+      "b": 0.7152480447215007,
+      "mse": 0.0037362171881114297,
+      "unscaled_mse": 0.014552480138090712,
+      "n2_mean_excess": -0.0050980793042707286,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "height/detrended_anomalies/JJA/nonzonal/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 0.6478828623646383,
+      "mse": 0.009773422734578477,
+      "unscaled_mse": 0.012539795302296272,
+      "n2_mean_excess": -0.014114198197934469,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/raw/ALL/all_m/earth": {
+      "a": 0.0,
+      "b": -2.9999947243168106,
+      "mse": 0.01738762490380626,
+      "unscaled_mse": 0.07003512103395622,
+      "n2_mean_excess": -0.10668969544279272,
+      "at_bound": true,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/raw/ALL/all_m/rossby_haurwitz": {
+      "a": 0.0,
+      "b": -2.9999947243168106,
+      "mse": 0.07651671970851584,
+      "unscaled_mse": 0.18307682785920504,
+      "n2_mean_excess": -0.137449830404345,
+      "at_bound": true,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/raw/ALL/nonzonal/earth": {
+      "a": 0.0,
+      "b": -1.1106299353438358,
+      "mse": 0.02818039204765584,
+      "unscaled_mse": 0.03734096357898514,
+      "n2_mean_excess": 0.06162700377481874,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/raw/ALL/nonzonal/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 1.7711656114936987,
+      "mse": 0.03258160830306148,
+      "unscaled_mse": 0.09297168263238781,
+      "n2_mean_excess": -0.03588664986171203,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/raw/DJF/all_m/earth": {
+      "a": 0.0,
+      "b": -2.9999947243168106,
+      "mse": 0.007952435510417397,
+      "unscaled_mse": 0.0381615505388487,
+      "n2_mean_excess": -0.31356168478194013,
+      "at_bound": true,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/raw/DJF/all_m/rossby_haurwitz": {
+      "a": 0.0,
+      "b": -2.9999947243168106,
+      "mse": 0.04764971534707956,
+      "unscaled_mse": 0.1234140349884282,
+      "n2_mean_excess": -0.4282570382205062,
+      "at_bound": true,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/raw/DJF/nonzonal/earth": {
+      "a": 0.0,
+      "b": -2.226024177915623,
+      "mse": 0.028571581872796646,
+      "unscaled_mse": 0.06672411305502796,
+      "n2_mean_excess": -0.0837528144498576,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/raw/DJF/nonzonal/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 1.7118033988749897,
+      "mse": 0.1252855432564871,
+      "unscaled_mse": 0.17261422912031746,
+      "n2_mean_excess": -0.011157587446084043,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/raw/JJA/all_m/earth": {
+      "a": 0.0,
+      "b": -2.9999947243168106,
+      "mse": 0.04914210873223111,
+      "unscaled_mse": 0.15343486552377505,
+      "n2_mean_excess": -0.06975585725218676,
+      "at_bound": true,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/raw/JJA/all_m/rossby_haurwitz": {
+      "a": 0.0,
+      "b": -2.9999947243168106,
+      "mse": 0.18571226937609098,
+      "unscaled_mse": 0.3517757775672243,
+      "n2_mean_excess": -0.09479335264096175,
+      "at_bound": true,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/raw/JJA/nonzonal/earth": {
+      "a": 0.0,
+      "b": 0.3313009966963314,
+      "mse": 0.015440716705394935,
+      "unscaled_mse": 0.01590390317983493,
+      "n2_mean_excess": 0.2999097613738776,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/raw/JJA/nonzonal/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 1.8316801344098432,
+      "mse": 0.0261495854129783,
+      "unscaled_mse": 0.06477770031325425,
+      "n2_mean_excess": -0.0673242084941558,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/demeaned/ALL/all_m/earth": {
+      "a": 0.0,
+      "b": -0.23795176508452276,
+      "mse": 0.01652085580521708,
+      "unscaled_mse": 0.01705433714321752,
+      "n2_mean_excess": 0.37242388010807914,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/demeaned/ALL/all_m/rossby_haurwitz": {
+      "a": 0.0,
+      "b": -0.4218575386883188,
+      "mse": 0.045907292035089406,
+      "unscaled_mse": 0.04734186540968498,
+      "n2_mean_excess": 0.560190285650297,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/demeaned/ALL/nonzonal/earth": {
+      "a": 0.0,
+      "b": -0.18793976453657021,
+      "mse": 0.01598985330915946,
+      "unscaled_mse": 0.016335826206925648,
+      "n2_mean_excess": 0.02700207479333606,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/demeaned/ALL/nonzonal/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 1.7258037669586048,
+      "mse": 0.015537728755237719,
+      "unscaled_mse": 0.03323258559468602,
+      "n2_mean_excess": -0.04635284291407223,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/demeaned/DJF/all_m/earth": {
+      "a": 0.0,
+      "b": -0.13118609416960064,
+      "mse": 0.01564881334386988,
+      "unscaled_mse": 0.01580618802271857,
+      "n2_mean_excess": 0.35282640968796153,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/demeaned/DJF/all_m/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 1.6474660140947768,
+      "mse": 0.07032198517591662,
+      "unscaled_mse": 0.07145967579812107,
+      "n2_mean_excess": 0.6536403668803457,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/demeaned/DJF/nonzonal/earth": {
+      "a": 0.0,
+      "b": -0.674896293894351,
+      "mse": 0.019614325225813217,
+      "unscaled_mse": 0.026388172677577794,
+      "n2_mean_excess": -0.13990372393962153,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/demeaned/DJF/nonzonal/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 1.687014404811931,
+      "mse": 0.03757122899885157,
+      "unscaled_mse": 0.05603893929190801,
+      "n2_mean_excess": -0.015500957391890996,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/demeaned/JJA/all_m/earth": {
+      "a": 0.0,
+      "b": -0.907035720061781,
+      "mse": 0.016872755745745288,
+      "unscaled_mse": 0.025202254896033893,
+      "n2_mean_excess": 0.2996928713194386,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/demeaned/JJA/all_m/rossby_haurwitz": {
+      "a": 0.0,
+      "b": -0.819671789787615,
+      "mse": 0.04911914333662522,
+      "unscaled_mse": 0.05513304508164871,
+      "n2_mean_excess": 0.4988424796311339,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/demeaned/JJA/nonzonal/earth": {
+      "a": 0.0,
+      "b": -0.5175443151856522,
+      "mse": 0.014332870725552914,
+      "unscaled_mse": 0.01659586772045661,
+      "n2_mean_excess": 0.04368525758140161,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/demeaned/JJA/nonzonal/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 1.760841822011208,
+      "mse": 0.01684707303125876,
+      "unscaled_mse": 0.046299933359207214,
+      "n2_mean_excess": -0.05409399912831998,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/deseasonalized/ALL/all_m/earth": {
+      "a": 0.0,
+      "b": 0.17686855313289773,
+      "mse": 0.004384890361758775,
+      "unscaled_mse": 0.004780965686628304,
+      "n2_mean_excess": 0.04763608202241717,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/deseasonalized/ALL/all_m/rossby_haurwitz": {
+      "a": 0.0,
+      "b": -0.6070473521038717,
+      "mse": 0.005495711647727344,
+      "unscaled_mse": 0.007333558288351744,
+      "n2_mean_excess": -0.008019360925339846,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/deseasonalized/ALL/nonzonal/earth": {
+      "a": 0.0,
+      "b": 0.9818703111086156,
+      "mse": 0.005435782224296737,
+      "unscaled_mse": 0.015963136993848222,
+      "n2_mean_excess": 0.20267572519621352,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/deseasonalized/ALL/nonzonal/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 0.8990988656933651,
+      "mse": 0.004521569768293414,
+      "unscaled_mse": 0.009569819908517204,
+      "n2_mean_excess": -0.021636593961423697,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/deseasonalized/DJF/all_m/earth": {
+      "a": 0.0,
+      "b": -0.06767235947305775,
+      "mse": 0.004666574257272168,
+      "unscaled_mse": 0.004731213993484732,
+      "n2_mean_excess": -0.014303365293884185,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/deseasonalized/DJF/all_m/rossby_haurwitz": {
+      "a": 0.0,
+      "b": -0.8198351165499337,
+      "mse": 0.010121806563882963,
+      "unscaled_mse": 0.013198595394503394,
+      "n2_mean_excess": -0.05665483138721764,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/deseasonalized/DJF/nonzonal/earth": {
+      "a": 0.0,
+      "b": 0.9482544549953669,
+      "mse": 0.007624780681523191,
+      "unscaled_mse": 0.015440046759333092,
+      "n2_mean_excess": 0.18564145071667076,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/deseasonalized/DJF/nonzonal/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 1.3828475944386898,
+      "mse": 0.0073024456099017015,
+      "unscaled_mse": 0.014906105379775839,
+      "n2_mean_excess": -0.013800664987007891,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/deseasonalized/JJA/all_m/earth": {
+      "a": 0.0,
+      "b": 0.20022277261310092,
+      "mse": 0.0033952536881677003,
+      "unscaled_mse": 0.003923870614128237,
+      "n2_mean_excess": 0.09889017092912164,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/deseasonalized/JJA/all_m/rossby_haurwitz": {
+      "a": 0.0,
+      "b": -0.6353705634753706,
+      "mse": 0.0047176713935651,
+      "unscaled_mse": 0.007174209816832407,
+      "n2_mean_excess": 0.031201353593085318,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/deseasonalized/JJA/nonzonal/earth": {
+      "a": 0.0,
+      "b": 0.8877233831680429,
+      "mse": 0.003531865633147541,
+      "unscaled_mse": 0.013704483085450626,
+      "n2_mean_excess": 0.21721752726566387,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/deseasonalized/JJA/nonzonal/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 0.9336336906227843,
+      "mse": 0.003291983132590047,
+      "unscaled_mse": 0.008097872829628148,
+      "n2_mean_excess": -0.03229154150545702,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/detrended_anomalies/ALL/all_m/earth": {
+      "a": 0.0,
+      "b": 0.20994000184099898,
+      "mse": 0.004052852499724692,
+      "unscaled_mse": 0.0046472565869006026,
+      "n2_mean_excess": 0.0554951784978827,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/detrended_anomalies/ALL/all_m/rossby_haurwitz": {
+      "a": 0.0,
+      "b": -0.5379964235074894,
+      "mse": 0.00507437472911833,
+      "unscaled_mse": 0.006560923022134799,
+      "n2_mean_excess": 0.003510522619882851,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/detrended_anomalies/ALL/nonzonal/earth": {
+      "a": 0.0,
+      "b": 0.9812679285915024,
+      "mse": 0.005493837855090921,
+      "unscaled_mse": 0.015972045612387648,
+      "n2_mean_excess": 0.2006932023489485,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/detrended_anomalies/ALL/nonzonal/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 0.8995888463709565,
+      "mse": 0.004487822198781911,
+      "unscaled_mse": 0.009542263758438476,
+      "n2_mean_excess": -0.021878373741670416,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/detrended_anomalies/DJF/all_m/earth": {
+      "a": 0.0,
+      "b": -0.021741175660532113,
+      "mse": 0.004508388108766179,
+      "unscaled_mse": 0.004517080631632284,
+      "n2_mean_excess": -0.00516172417991115,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/detrended_anomalies/DJF/all_m/rossby_haurwitz": {
+      "a": 0.0,
+      "b": -0.7451626739967977,
+      "mse": 0.009445074424334374,
+      "unscaled_mse": 0.011998870152435582,
+      "n2_mean_excess": -0.04559130753158911,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/detrended_anomalies/DJF/nonzonal/earth": {
+      "a": 0.0,
+      "b": 0.9482536874426544,
+      "mse": 0.007693868055520967,
+      "unscaled_mse": 0.015484859091565358,
+      "n2_mean_excess": 0.1835567850239294,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/detrended_anomalies/DJF/nonzonal/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 1.3779631464208986,
+      "mse": 0.007301064764563607,
+      "unscaled_mse": 0.01489438778450509,
+      "n2_mean_excess": -0.012997331591409056,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/detrended_anomalies/JJA/all_m/earth": {
+      "a": 0.0,
+      "b": 0.24880641233642586,
+      "mse": 0.002972950992009216,
+      "unscaled_mse": 0.003772628765496155,
+      "n2_mean_excess": 0.1099651454323816,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/detrended_anomalies/JJA/all_m/rossby_haurwitz": {
+      "a": 0.0,
+      "b": -0.5514126891384671,
+      "mse": 0.0043119322888971155,
+      "unscaled_mse": 0.00630140287073711,
+      "n2_mean_excess": 0.04559017338772606,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/detrended_anomalies/JJA/nonzonal/earth": {
+      "a": 0.0,
+      "b": 0.8860205930476104,
+      "mse": 0.003524197073264663,
+      "unscaled_mse": 0.013618822723104563,
+      "n2_mean_excess": 0.21530509651406743,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "streamfunction/detrended_anomalies/JJA/nonzonal/rossby_haurwitz": {
+      "a": 0.0,
+      "b": 0.9343064348883294,
+      "mse": 0.003283606286271558,
+      "unscaled_mse": 0.008102773085548586,
+      "n2_mean_excess": -0.032490988152783985,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    }
+  },
+  "time_splits": {
+    "all_m_1979-2000": {
+      "a": 0.0,
+      "b": 0.024624219596424003,
+      "mse": 0.011005311498110744,
+      "unscaled_mse": 0.011013920267325976,
+      "n2_mean_excess": 0.005968024058062662,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "all_m_2001-2022": {
+      "a": 0.0,
+      "b": -0.022364434013552686,
+      "mse": 0.008769147338906595,
+      "unscaled_mse": 0.008777416624946058,
+      "n2_mean_excess": 0.0215980961075843,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "all_m_early_b_tested_late": {
+      "b": 0.024624219596424003,
+      "n2_mean_excess": 0.024741999699579777
+    },
+    "nonzonal_1979-2000": {
+      "a": 0.0,
+      "b": 0.8082128351788104,
+      "mse": 0.013930688287979687,
+      "unscaled_mse": 0.01825905400609278,
+      "n2_mean_excess": -0.016621304847853215,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "nonzonal_2001-2022": {
+      "a": 0.0,
+      "b": 0.6827807290230951,
+      "mse": 0.014981983105548236,
+      "unscaled_mse": 0.017391423854044352,
+      "n2_mean_excess": -0.017482381725273877,
+      "at_bound": false,
+      "b_bounds": [
+        -3.0,
+        3.0
+      ],
+      "fit_degrees": [
+        3,
+        4,
+        5
+      ],
+      "fit_window_days_at_n3": 10
+    },
+    "nonzonal_early_b_tested_late": {
+      "b": 0.8082128351788104,
+      "n2_mean_excess": -0.014771492904396135
+    }
+  },
+  "fit_sensitivity": {
+    "all_m": {
+      "five_days": {
+        "a": 0.0,
+        "b": 0.0452169107868353,
+        "mse": 0.001527456300430572,
+        "unscaled_mse": 0.0015658833452519125,
+        "n2_mean_excess": 0.03706738394880947,
+        "at_bound": false,
+        "b_bounds": [
+          -3.0,
+          3.0
+        ],
+        "fit_degrees": [
+          3,
+          4,
+          5
+        ],
+        "fit_window_days_at_n3": 5
+      },
+      "fifteen_days": {
+        "a": 0.0,
+        "b": -0.0051405961580685755,
+        "mse": 0.007280268587708524,
+        "unscaled_mse": 0.00728059455295173,
+        "n2_mean_excess": 0.01950013346694151,
+        "at_bound": false,
+        "b_bounds": [
+          -3.0,
+          2.7138308977134478
+        ],
+        "fit_degrees": [
+          3,
+          4,
+          5
+        ],
+        "fit_window_days_at_n3": 15
+      },
+      "degrees_3_to_8": {
+        "a": 0.0,
+        "b": -0.1535751175974468,
+        "mse": 0.013763948901827652,
+        "unscaled_mse": 0.014493068355247303,
+        "n2_mean_excess": 0.0043460583812725715,
+        "at_bound": false,
+        "b_bounds": [
+          -3.0,
+          1.826780210445695
+        ],
+        "fit_degrees": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "fit_window_days_at_n3": 10
+      }
+    },
+    "nonzonal": {
+      "five_days": {
+        "a": 0.0,
+        "b": 0.4381238851785148,
+        "mse": 0.01953550164813265,
+        "unscaled_mse": 0.02417894354947058,
+        "n2_mean_excess": 0.009843576284861832,
+        "at_bound": false,
+        "b_bounds": [
+          -3.0,
+          3.0
+        ],
+        "fit_degrees": [
+          3,
+          4,
+          5
+        ],
+        "fit_window_days_at_n3": 5
+      },
+      "fifteen_days": {
+        "a": 0.0,
+        "b": 0.7731405846389142,
+        "mse": 0.009876410007091434,
+        "unscaled_mse": 0.012489817935991424,
+        "n2_mean_excess": -0.006593926048384895,
+        "at_bound": false,
+        "b_bounds": [
+          -3.0,
+          2.7138308977134478
+        ],
+        "fit_degrees": [
+          3,
+          4,
+          5
+        ],
+        "fit_window_days_at_n3": 15
+      },
+      "degrees_3_to_8": {
+        "a": 0.0,
+        "b": 0.17072299469395044,
+        "mse": 0.016007809349750258,
+        "unscaled_mse": 0.017093326439903054,
+        "n2_mean_excess": -0.007190440383697555,
+        "at_bound": false,
+        "b_bounds": [
+          -3.0,
+          1.826780210445695
+        ],
+        "fit_degrees": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "fit_window_days_at_n3": 10
+      }
+    }
+  },
+  "sample_count": 64284,
+  "job_id": "2095749"
+}
