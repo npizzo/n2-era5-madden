@@ -99,27 +99,27 @@ def plot_and_report(c,num,den,summary):
     for ax,(prep,sector,frame,title) in zip(axes.flat,[(0,0,1,'Raw height · all orders · rotating frame'),(2,0,1,'Height anomalies · all orders · rotating frame'),(2,1,1,'Height anomalies · nonzonal · rotating frame'),(2,1,0,'Height anomalies · nonzonal · Earth-fixed')]):
         for n in range(2,9):ax.plot(LAGS,c[0,prep,0,sector,frame,n],color=colors[n],label=f'n={n}',lw=2.3 if n==2 else 1.3)
         ax.axhline(0,color='.6',lw=.7);ax.axhline(np.exp(-1),color='.7',ls=':',lw=.7)
-        ax.set(title=title,xlim=(0,30),ylim=(-.5,1.05),xlabel='Lag (days)',ylabel='Cₙ(T)');ax.legend(ncol=4,fontsize=9)
+        ax.set(title=title,xlim=(0,30),ylim=(-1.05,1.05),xlabel='Lag (days)',ylabel='Cₙ(T)');ax.legend(ncol=4,fontsize=9)
     fig.suptitle('500 hPa height persistence: climatology, zonal flow, and propagation controls')
     fig.tight_layout();fig.savefig(OUT/'memory_correlations.png',dpi=160);plt.close(fig)
     fig,axes=plt.subplots(1,2,figsize=(13,5))
     for ei,ax in enumerate(axes):
         fit=summary['primary'][SECTORS[ei]];b=fit['b'];tau=np.linspace(0,10,161)
         for n in range(2,9):
-            ax.plot(tau,np.interp((n/3)**b*tau,LAGS,c[0,2,0,ei,1,n]),color=colors[n],lw=2.5 if n==2 else 1.4,ls='-' if n<=5 else '--',label=f'n={n}'+(' · held out' if n==2 else ''))
-        ax.axhline(0,color='.6',lw=.7);ax.set(xlabel='Rescaled lag T (days at n=3)',ylabel='Cₙ((n/3)ᵇ T)',title=f'{SECTORS[ei]} · a=0, b={b:.3f}',ylim=(-.5,1.05));ax.legend(ncol=2,fontsize=9)
+            ax.plot(tau,np.interp((n/3)**b*tau,LAGS,c[0,2,0,ei,1,n],left=np.nan,right=np.nan),color=colors[n],lw=2.5 if n==2 else 1.4,ls='-' if n<=5 else '--',label=f'n={n}'+(' · held out' if n==2 else ''))
+        ax.axhline(0,color='.6',lw=.7);ax.set(xlabel='Rescaled lag T (days at n=3)',ylabel='Cₙ((n/3)ᵇ T)',title=f'{SECTORS[ei]} · a=0, b={b:.3f}',ylim=(-1.05,1.05));ax.legend(ncol=2,fontsize=9)
     fig.suptitle('Fit n=3–5; test n=2 without fitting it · height anomalies, rotating frame')
     fig.tight_layout();fig.savefig(OUT/'memory_collapse.png',dpi=160);plt.close(fig)
     fig,axes=plt.subplots(1,3,figsize=(15,4.5),sharey=True)
     for si,ax in enumerate(axes):
         for n in (2,3,4,5):ax.plot(LAGS,c[0,2,si,0,1,n],label=f'n={n}',color=colors[n])
-        ax.axhline(0,color='.6',lw=.7);ax.set(title=SEASONS[si],xlabel='Lag (days)',xlim=(0,30),ylim=(-.5,1.05));ax.legend()
+        ax.axhline(0,color='.6',lw=.7);ax.set(title=SEASONS[si],xlabel='Lag (days)',xlim=(0,30),ylim=(-1.05,1.05));ax.legend()
     axes[0].set_ylabel('Cₙ(T)');fig.suptitle('500 hPa height anomalies · rotating frame · seasonal pairs stay contiguous')
     fig.tight_layout();fig.savefig(OUT/'memory_seasons.png',dpi=160);plt.close(fig)
     fig,axes=plt.subplots(1,2,figsize=(13,4.5),sharey=True)
     for fi,ax in enumerate(axes):
         for n in (1,2,3,4,5):ax.plot(LAGS,c[fi,2,0,0,1,n],label=f'n={n}')
-        ax.axhline(0,color='.6',lw=.7);ax.set(title=FIELDS[fi],xlabel='Lag (days)',xlim=(0,30),ylim=(-.5,1.05));ax.legend()
+        ax.axhline(0,color='.6',lw=.7);ax.set(title=FIELDS[fi],xlabel='Lag (days)',xlim=(0,30),ylim=(-1.05,1.05));ax.legend()
     axes[0].set_ylabel('Cₙ(T)');fig.suptitle('Field-definition control · anomalies in the theoretical rotating frame')
     fig.tight_layout();fig.savefig(OUT/'memory_field_control.png',dpi=160);plt.close(fig)
     lines=['# Rotating-frame memory analysis — document follow-up','','Status: **descriptive hypothesis test; scientific review required**.','',
