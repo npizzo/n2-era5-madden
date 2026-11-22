@@ -4,6 +4,30 @@ Results from Unity: 64,284 six-hourly samples from 1979–2022 at 300 and 500 hP
 
 [Code and overview](README.md) · [Madden report](results/STAGE1_REPORT.md) · [Energy-content report](results/SPECTRAL_CONTENT_REPORT.md) · [Numerical checks](results/SETUP_REPORT.md) · [Download datasets](https://github.com/npizzo/n2-era5-madden/releases)
 
+## Rotating-frame atmospheric memory
+
+[Findings and interpretation](results/memory-v1/READOUT.md) · [Revised approach](docs/memory_approach.md) · [Primary numerical report](results/memory-v1/REPORT.md)
+
+Actual 500 hPa height, 1979–2022. Fit degrees 3–5; hold degree 2 out. Zero-lag normalization fixes a=0. The primary all-order fit has b=0.011 and degree-2 excess +0.0143 (95% interval −0.0090 to +0.0345). Nonzonal excess is negative. Initial degree-2 decay is faster than degrees 3–5; later tails depend on components and preprocessing.
+
+![Raw and anomaly correlations in two frames](results/memory-v1/memory_correlations.png)
+
+![Scaling fit and held-out degree 2](results/memory-v1/memory_collapse.png)
+
+![Seasonal memory comparison](results/memory-v1/memory_seasons.png)
+
+![Height versus rotational streamfunction](results/memory-v1/memory_field_control.png)
+
+### Post-inspection time-of-day sensitivity
+
+Removing the repeating month-dependent UTC-hour signal gives positive all-order excess +0.0412 (95% interval +0.0187 to +0.0645), while nonzonal excess remains negative. This exploratory sensitivity preserves monthly means and leaves the primary analysis unchanged. It does not identify the signal as physical tides or demonstrate forecast skill.
+
+![UTC-cycle sensitivity](results/memory-v1/memory_utc_control.png)
+
+![Earth-fixed temporal spectrum before and after UTC-cycle removal](results/memory-v1/memory_utc_spectrum.png)
+
+[Primary correlations](results/memory-v1/correlations.nc) · [UTC-control correlations](results/memory-v1/utc_control_correlations.nc) · [Extracted height datasets](https://github.com/npizzo/n2-era5-madden/releases/tag/v0.2-memory-analysis)
+
 ## Energy versus spherical-harmonic degree
 
 ![Rotational, divergent and total kinetic-energy spectra](results/energy_degree_spectra.png)

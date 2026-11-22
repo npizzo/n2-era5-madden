@@ -4,6 +4,14 @@ Code, numerical results, figures and reproducibility records for ERA5 spherical-
 
 **Status: initial comparisons completed; scientific review required.** Six synthetic tests passed. The strict individual-coefficient resolution criterion failed, and the 10-day Madden target did not exceed the chosen background reference. This is a partial comparison, not a certified replication or an automatic pass to further dynamical hypotheses.
 
+## Current follow-up: atmospheric memory
+
+The [revised approach](docs/memory_approach.md) follows the 21 November research note: calculate 500 hPa height correlations in each degree's theoretical rotating frame, fit the n=3–5 time scaling, and test n=2 without fitting it. The amplitude exponent is fixed to a=0 by zero-lag normalization; a free-amplitude fit is retained as a sensitivity check.
+
+The follow-up is complete. The all-order n=3–5 fit gives b=0.011 and a held-out degree-2 excess of +0.0143 (95% year-bootstrap interval −0.0090 to +0.0345). Nonzonal excess is negative. A post-inspection UTC-cycle control gives a positive all-order tail but a negative nonzonal comparison; initial degree-2 decay remains faster than degrees 3–5. These results do not establish uniformly exceptional degree-2 memory.
+
+**[Read the memory findings](results/memory-v1/READOUT.md)** · [Primary report](results/memory-v1/REPORT.md) · [Memory data release](https://github.com/npizzo/n2-era5-madden/releases/tag/v0.2-memory-analysis). Five primary numerical tests and one UTC-cycle test passed. All atmospheric calculations ran on Unity. The 1° height sensitivity is separate from the earlier vorticity audit.
+
 ## Results
 
 **[Open the splash page and interactive gallery](https://npizzo.github.io/n2-era5-madden/)**
